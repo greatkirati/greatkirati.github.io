@@ -530,9 +530,13 @@ a:active {
     }    
 }
  
-.container {
+
+
+
+  .container-fluid {
     position: relative;
     width: 100%;
+    max-width: 250px;
   }
   
   .image {
@@ -550,70 +554,37 @@ a:active {
     height: 100%;
     width: 100%;
     opacity: 0;
-    transition: .5s ease;
+    transition: .3s ease;
     background-color: #00b894;
-    
+  }
+  
+  .container-fluid:hover .overlay {
+    opacity: 0.85;
+  }
+  
+  .icon {
+    color: white;
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .fa-user:hover {
+    color: #eee;
   }
 
-  @media (max-width: 1080px){
-    .overlay {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 100%;
-        width: 60%;
-        opacity: 0;
-        transition: .5s ease;
-        background-color: #00b894;
-        
-      }
-  }
-  @media (max-width: 575px){
-    .overlay {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 100%;
-        width: 45%;
-        opacity: 0;
-        transition: .5s ease;
-        background-color: #00b894;
-        
-      }
-  }
-  
-  @media (max-width: 420px){
-    .overlay {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 100%;
-        width: 65%;
-        opacity: 0;
-        transition: .5s ease;
-        background-color: #00b894;
-        
-      }
-  }
-  .container:hover .overlay {
-    opacity: 0.9;
-    cursor: pointer;
-  }
-  
+
   .text {
-    color: white;
+    color: #fff;
     font-size: 20px;
     position: absolute;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    transform: translate(-50%,-50%);
     text-align: center;
-  }
+}
+  
