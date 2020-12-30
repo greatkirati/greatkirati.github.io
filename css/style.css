@@ -554,7 +554,53 @@ a:active {
     background-color: #00b894;
     
   }
+
+  @media (max-width: 767px){
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 60%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #00b894;
+        
+      }
+  }
+  @media (max-width: 575px){
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 45%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #00b894;
+        
+      }
+  }
   
+  @media (max-width: 420px){
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 65%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #00b894;
+        
+      }
+  }
   .container:hover .overlay {
     opacity: 0.9;
     cursor: pointer;
