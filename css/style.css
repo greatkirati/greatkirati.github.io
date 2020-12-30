@@ -555,7 +555,7 @@ a:active {
     
   }
 
-  @media (max-width: 767px){
+  @media (max-width: 1080px){
     .overlay {
         position: absolute;
         top: 0;
